@@ -1,33 +1,28 @@
 # PFA2024
-# Welcome to the Enstab Course and Exam Portal
+# Bienvenue sur le Portail des Cours et Examens de l'ENSTAB.
 
 ## Project Overview
 
 ![Project Image](./projet.png)
-Welcome to the Enstab Course and Exam Portal, a comprehensive platform designed to facilitate access to courses and exams for students and colleagues at ENSTAB. Our project aims to streamline the process of finding courses and exams, making it easier for users to navigate and locate the resources they need.
 
-## Project Features
+Bienvenue sur le Portail des Cours et Examens de l'ENSTAB, une plateforme complète conçue pour faciliter l'accès aux cours et examens pour les étudiants et collègues de l'ENSTAB. Notre projet vise à rationaliser le processus de recherche de cours et d'examens, rendant ainsi plus facile la navigation et la localisation des ressources dont les utilisateurs ont besoin.
 
-- **Course Catalog:** Browse through a vast catalog of courses offered at ENSTAB.
-- **Exam Repository:** Access a repository of past exam papers for study and reference purposes.
-- **User-Friendly Interface:** Enjoy a user-friendly interface designed for easy navigation and intuitive usage.
-- **Responsive Design:** Access the portal seamlessly across various devices, ensuring a smooth user experience.
+## Fonctionnalités du Projet
+Catalogue de Cours : Parcourez un vaste catalogue de cours proposés à l'ENSTAB.
+Répertoire d'Examens : Accédez à un répertoire de sujets d'examens passés pour l'étude et la référence.
+Interface Conviviale : Profitez d'une interface conviviale conçue pour une navigation facile et intuitive.
+Design Réactif : Accédez au portail de manière transparente sur différents appareils, garantissant une expérience utilisateur fluide.
+## Pour Commencer
+Pour commencer avec le Portail des Cours et Examens de l'ENSTAB, suivez ces étapes :
 
-## Getting Started
+Clonez le dépôt du projet sur votre machine locale.
+Installez les dépendances nécessaires en utilisant npm install.
+Lancez le serveur de développement avec npm start.
+Ouvrez http://localhost:3000 dans votre navigateur Web pour afficher le portail.
+## Objectifs du Projet
+Notre objectif avec ce projet est de fournir une plateforme centralisée qui simplifie le processus d'accès aux cours et ressources d'examen pour les étudiants et collègues de l'ENSTAB. En offrant une interface conviviale et des fonctionnalités complètes, nous visons à améliorer l'expérience d'apprentissage et à soutenir la réussite académique.
 
-To get started with the Enstab Course and Exam Portal, follow these steps:
+## À Propos de Nous
+Le projet Portail des Cours et Examens de l'ENSTAB a été développé par une équipe dévouée d'étudiants dans le cadre de notre projet de fin d'année (PFA2). Notre mission est de contribuer à la communauté académique en créant des outils et des ressources précieux qui bénéficient aux générations actuelles et futures d'étudiants et de membres du corps professoral de l'ENSTAB.
 
-1. Clone the project repository to your local machine.
-2. Install the necessary dependencies using `npm install`.
-3. Run the development server with `npm start`.
-4. Open [http://localhost:3000](http://localhost:3000) in your web browser to view the portal.
-
-## Project Goals
-
-Our goal with this project is to provide a centralized platform that simplifies the process of accessing courses and exam resources for ENSTAB students and colleagues. By offering a user-friendly interface and comprehensive features, we aim to enhance the learning experience and support academic success.
-
-## About Us
-
-The Enstab Course and Exam Portal project was developed by a dedicated team of students as part of our final year project (PFA2). Our mission is to contribute to the academic community by creating valuable tools and resources that benefit current and future generations of ENSTAB students and faculty.
-
-Thank you for visiting the Enstab Course and Exam Portal. We hope you find it useful and informative!
+Merci d'avoir visité le Portail des Cours et Examens de l'ENSTAB. Nous espérons que vous le trouverez utile et informatif !
