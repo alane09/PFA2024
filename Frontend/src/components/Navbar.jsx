@@ -84,9 +84,7 @@ const Navbar = () => {
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
-                        <li className="nav-item">
-                            <Link to='/file' className="nav-link"><strong>UPLOAD</strong></Link>
-                        </li>
+                        
                         <li className="nav-item">
                             <Link to='/file' className="nav-link"><strong>UPLOAD</strong></Link>
                         </li>

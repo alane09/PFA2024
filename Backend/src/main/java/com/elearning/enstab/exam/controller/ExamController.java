@@ -39,7 +39,7 @@ public class ExamController {
             return ResponseEntity.badRequest().body("Select a file to upload");
         }
         UUID identifier = UUID.randomUUID();
-        String path = System.getProperty("user.dir") + "/src/main/resources/exams/" + identifier + ".pdf";
+        String path = System.getProperty("user.dir") + "/Backend/src/main/resources/exams/" + identifier + ".pdf";
         file.transferTo(new File(path));
 
         examService.saveExam(new Exam(file.getOriginalFilename(), identifier, niveau, semestre, specialite, matiere, examen, cours));
@@ -49,7 +49,7 @@ public class ExamController {
 
     @GetMapping("/{identifier}")
     public ResponseEntity<Resource> getPdf(@PathVariable String identifier) throws IOException {
-        String path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "exams", identifier + ".pdf").toString();
+        String path = Paths.get(System.getProperty("user.dir"), "Backend","src", "main", "resources", "exams", identifier + ".pdf").toString();
         File file = new File(path);
 
         if (!file.exists()) {
