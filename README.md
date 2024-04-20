@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-![Project Image](./projet.png)
+![Project Image](./ENSTALEARN.png)
 
 Bienvenue sur le Portail des Cours et Examens de l'ENSTAB, une plateforme complète conçue pour faciliter l'accès aux cours et examens pour les étudiants et collègues de l'ENSTAB. Notre projet vise à rationaliser le processus de recherche de cours et d'examens, rendant ainsi plus facile la navigation et la localisation des ressources dont les utilisateurs ont besoin.
 
