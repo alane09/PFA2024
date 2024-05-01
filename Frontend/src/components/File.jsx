@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import './File.css';
-
+//Don't touch or change anything in this file (ala)
 function File() {
     const [selectedFiles, setSelectedFiles] = useState([]); // Change state to hold an array of files
     const [niveau, setNiveau] = useState(null);
@@ -53,12 +53,12 @@ function File() {
             console.log(response.data);
 
             // Show success notification
-            toast.success('Files uploaded successfully');
+            toast.success('Les fichiers ont été téléchargés avec succès.');
         } catch (error) {
-            console.error('Error uploading files:', error.message);
+            console.error('Erreur lors du téléchargement des fichiers : veuillez réessayer.', error.message);
 
             // Show error notification
-            toast.error('Error uploading files');
+            toast.error('Erreur lors du téléchargement des fichiers : veuillez réessayer.');
         }
     };
 
@@ -66,7 +66,7 @@ function File() {
         <body>
             <main>
                 <div className='container'>
-                    <h1 style={{ textAlign: 'center' }}><strong> File Upload </strong></h1>
+                    <h1 style={{ textAlign: 'center' }}><strong> Télecharger des documents  </strong></h1>
                 </div>
                 <div className='container'>
                     <h1 className='header'><strong>Ajouter un Cours ou Examens</strong></h1>

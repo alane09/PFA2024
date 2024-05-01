@@ -24,7 +24,7 @@ const Navbar = () => {
             }
             const data = await response.json();
             setSearchResults(data);
-            // setShowDropdown(true); // Remove this line
+            // setShowDropdown(true);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -33,14 +33,14 @@ const Navbar = () => {
     const search = (query) => {
         if (query.trim() === '') {
             setSearchResults([]);
-            // setShowDropdown(false); // Remove this line
+            // setShowDropdown(false); 
             return;
         }
         fetchData(query);
     };
 
     // Function to handle click on a search result
-    // const handleSearchResultClick = (url) => { // Remove this function
+    // const handleSearchResultClick = (url) => { 
     //     setPdfUrl(url);
     // };
 
@@ -80,13 +80,12 @@ const Navbar = () => {
                                     <Dropdown.Item href="SETP3">3 SETP</Dropdown.Item>
                                     <Dropdown.Item href="/SIC3">3 SIC </Dropdown.Item>
                                     <Dropdown.Item href="/EAN3">3 EAN  </Dropdown.Item>
-                                    {/* Add more Dropdown.Item components for other levels */}
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
                         
                         <li className="nav-item">
-                            <Link to='/file' className="nav-link"><strong>UPLOAD</strong></Link>
+                            <Link to='/file' className="nav-link"><strong>Télécharger </strong></Link>
                         </li>
                         <li className="nav-item">
                             <Link to='/about' className="nav-link"><strong>A PROPOS</strong></Link>
@@ -98,12 +97,10 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Render PDFView component only if search results are available */}
             {searchResults.length > 0 && (
                 <PDFViewer title="Search Results" items={searchResults} />
             )}
 
-            {/* Render PDFViewer component if pdfUrl is set */}
             {pdfUrl && <PDFViewer url={pdfUrl} />}
         </div>
     );

@@ -1,48 +1,51 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
+//import { useRef } from 'react';
 import './Contact.css';
-import L from 'leaflet';
+// Import leaflet library
+//import L from 'leaflet';
 
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+// Import FaLocationDot
+//import { FaLocationDot } from "react-icons/fa6";
 import 'leaflet/dist/leaflet.css';
 
 import team from './team.png';
 import enst from './enstab.jpg';
-import markerIcon from './location.png'; // Import your custom marker icon
+//import markerIcon from './location.png'; // Import your custom marker icon
 
 function Contact() {
-    const mapRef = useRef(null);
+    //const mapRef = useRef(null);
 
     useEffect(() => {
-        const map = L.map('map').setView([36.707224, 10.42665], 13);
+        // const map = L.map('map').setView([36.707224, 10.42665], 13);
 
         // Add tile layer to the map
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
-        }).addTo(map);
+        // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //     attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+        // }).addTo(map);
 
         // Define custom icon for the marker
-        const customIcon = L.icon({
-            iconUrl: markerIcon,
-            iconSize: [25, 41], // size of the icon
-            iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
-            popupAnchor: [0, -41] // point from which the popup should open relative to the iconAnchor
-        });
+        // const customIcon = L.icon({
+        //     iconUrl: markerIcon,
+        //     iconSize: [25, 41], // size of the icon
+        //     iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+        //     popupAnchor: [0, -41] // point from which the popup should open relative to the iconAnchor
+        // });
 
         // Add marker to the map using custom icon
-        L.marker([36.707224, 10.42665], { icon: customIcon }).addTo(map)
-            .bindPopup('ENSTA location')
-            .openPopup();
+        // L.marker([36.707224, 10.42665], { icon: customIcon }).addTo(map)
+        //     .bindPopup('ENSTA location')
+        //     .openPopup();
 
-        mapRef.current = map;
+        // mapRef.current = map;
 
         // Add event listener for zoomend event
-        map.on('zoomend', () => {
-            const currentZoom = mapRef.current.getZoom();
-            const center = mapRef.current.getCenter();
-            mapRef.current.setView(center, currentZoom);
-        });
+        // map.on('zoomend', () => {
+        //     const currentZoom = mapRef.current.getZoom();
+        //     const center = mapRef.current.getCenter();
+        //     mapRef.current.setView(center, currentZoom);
+        // });
     }, []);
 
     return (
@@ -62,11 +65,11 @@ function Contact() {
                             <p>aymen.sahbani@enstab.ucar.tn</p>
                             <p>alaa.neji@enstab.ucar.tn</p>
                         </div>
-                        <div className="col-lg icons">
+                        {/*<div className="col-lg icons">
                             <FaLocationDot size={30} />
                             <h3>LOCALISATION</h3>
                             <p>Borj Cedria Tunisia </p>
-                        </div>
+                        </div>*/}
                     </div>
                 </section>
 
@@ -112,14 +115,17 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className='container'>
-                    <h1 style={{ textAlign: 'center ' }}>LOCALISATION ENSTAB </h1>
-                    {/* Map container */}
-                    <div id="map" style={{ width: '100%', height: '400px' }}></div>
-                </div>
+            
+                    {/*
+                    <div className='container'>
+                    <h1 style={{ textAlign: 'center ' }}>LOCALISATION ENSTAB </h1> Map container */}
+                    {/* <div id="map" style={{ width: '100%', height: '400px' }}></div> 
+                    </div>*/}
+                
             </main>
         </div>
     )
 }
 
 export default Contact;
+

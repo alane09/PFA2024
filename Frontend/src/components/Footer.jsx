@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+//Don't touch or change anything in this file (ala)
 
 const Footer = () => {
     return (
